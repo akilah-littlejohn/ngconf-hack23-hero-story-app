@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-display',
   templateUrl: './display.component.html',
   styleUrls: ['./display.component.css'],
-  imports:true
+  imports:[]
 })
 export class DisplayComponent implements OnInit {
 
