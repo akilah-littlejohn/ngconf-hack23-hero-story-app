@@ -1,5 +1,5 @@
 <form>
-  <input type="file" (change)="onFileSelected($event)">
+  <input type="file" (change)="onFileSelected($any($event))">
   <input type="text" placeholder="Author Name" [(ngModel)]="authorName">
   <textarea placeholder="Story Text" [(ngModel)]="storyText"></textarea>
   <button (click)="submitStory()">Submit Story</button>

@@ -10,7 +10,7 @@ import { StoryService } from '../story.service';
 })
 export class EditorComponent implements OnInit {
 
-  fileData: string|null = null;
+  fileData: string ='';
   authorName: string = '';
   storyText: string = '';
 
@@ -29,6 +29,8 @@ export class EditorComponent implements OnInit {
       fileReader.readAsDataURL(file);
     }
   }
+  
+
   
   submitStory() {
     this.storyService.updateStoryData({
