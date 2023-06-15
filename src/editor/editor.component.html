@@ -1,3 +1,6 @@
-<p>
-editor works!
-</p>
+<form>
+  <input type="file" (change)="onFileSelected($event)">
+  <input type="text" placeholder="Author Name" [(ngModel)]="authorName">
+  <textarea placeholder="Story Text" [(ngModel)]="storyText"></textarea>
+  <button (click)="submitStory()">Submit Story</button>
+</form>
